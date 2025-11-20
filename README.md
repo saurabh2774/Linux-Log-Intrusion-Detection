@@ -31,6 +31,30 @@ This project simulates real SOC Tier-1 analyst tasks.
 - **Basic Shell Scripting**  
 - **Incident Documentation**
 
+  
+---
+
+## ▶️ How to Run the Script
+
+1. Clone the repo:
+```bash
+git clone <your-repository-url>
+cd linux-log-intrusion-detection
+# Show all failed login attempts
+grep "Failed password" /var/log/auth.log
+
+# Count total failed attempts
+grep "Failed password" /var/log/auth.log | wc -l
+
+# List attacker IPs and sort them by frequency
+grep "Failed password" /var/log/auth.log | awk '{print $11}' | sort | uniq -c | sort -nr
+Total Failed Attempts: 15
+
+Top Attacker IPs:
+     10 192.168.1.10
+      5 45.23.10.8
+
+
 ---
 
 ## 📂 Repository Structure
