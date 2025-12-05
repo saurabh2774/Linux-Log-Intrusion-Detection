@@ -9,7 +9,7 @@ This project focuses on analyzing Linux authentication logs (`/var/log/auth.log`
 ## 📌 Project Overview
 
 Linux systems record all authentication events inside the `auth.log` file.  
-In this project, we:
+In this project, i detect:
 
 - Detect **failed SSH login attempts**
 - Identify **brute-force attack patterns**
@@ -17,10 +17,6 @@ In this project, we:
 - Count **number of failed attempts**
 - Observe login timestamps for suspicious behavior
 - Generate a beginner-friendly **incident summary report**
-
-This project simulates real SOC Tier-1 analyst tasks.
-
----
 
 ## 🛠️ Tools & Technologies Used
 
@@ -31,8 +27,6 @@ This project simulates real SOC Tier-1 analyst tasks.
 - **Basic Shell Scripting**  
 - **Incident Documentation**
 
-  
----
 
 ## ▶️ How to Run the Script
 
